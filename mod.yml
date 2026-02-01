@@ -1,0 +1,38 @@
+title: Early-Easy Drive Forms in Shop
+originalAuthor: Sportiax
+description: Drive Forms available in items shop and forms fast level up
+assets:
+- name: 00battle.bin
+  method: binarc
+  source:
+  - name: fmlv
+    method: copy
+    type: List
+    source:
+    - name: fmlv_0.list
+      type: fmlv
+- name: 03system.bin
+  method: binarc
+  source:
+  - name: cmd
+    method: copy
+    type: List
+    source:
+    - name: cmd_0.list
+      type: cmd
+  - name: item
+    method: copy
+    type: List
+    source:
+    - name: item_0.list
+      type: item
+  - name: shop
+    method: copy
+    type: Unknown41
+    source:
+    - name: shop_0.list
+      type: shop
+- name: dll\EnsureFormWeapons.dll
+  method: copy
+  source:
+  - name: dll\EnsureFormWeapons.dll
