@@ -1,0 +1,62 @@
+local function _ShowAllItemsInShops()
+    if ReadLong(0x2FB8A2) == 0x43B70F0D74D68541 then --Steam Global 1.0.0.10
+        WriteByte(0x2FB8A6,0)
+    elseif ReadLong(0x2FB622) == 0x43B70F0D74D68541 then --Steam JP 1.0.0.10
+        WriteByte(0x2FB626,0)
+    end
+end
+
+return {
+    GameVersionString = "Steam 1.0.0.10",
+    Now = 0x0717008,
+    Sve = 0x2A0C540,
+    Save = 0x09A98B0,
+    Obj0Pointer = 0x2A25030,
+    Sys3Pointer = 0x2AE5E50,
+    Btl0Pointer = 0x2AE5E58,
+    ARDPointer = 0x2A0F828,
+    Music = 0x0ABAD44,
+    Pause = 0x0ABB878,
+    React = 0x2A11162,
+    Cntrl = 0x2A171E8,
+    Timer = 0x0ABB850,
+    Songs = 0x0B65D74,
+    SongExcellentChainScore = 0x0B65D78,
+    SwimThisWayScore = 0x0B65D84,
+    GScre = 0x072B130,
+    GMdal = 0x072B2C4,
+    GKill = 0x0AF7146,
+    CamTyp = 0x0718CA8,
+    GamSpd = 0x0717424,
+    CutNow = 0x0B64F98,
+    CutLen = 0x0B64FB4,
+    CutSkp = 0x0B64F9C,
+    BtlTyp = 0x2A11404,
+    BtlEnd = 0x2A0FCE0,
+    TxtBox = 0x074DF20,
+    DemCln = 0x2A0F8B4,
+    Slot1    = 0x2A23598,
+    NextSlot = 0x278,
+    Point1   = 0x2A0FA48,
+    NxtPoint = 0x50,
+    Gauge1   = 0x2A0FB38,
+    NxtGauge = 0x48,
+    Menu1    = 0x2A11110,
+    NextMenu = 0x8,
+    MSN = 0x0BF33C0,
+    Input = 0xBF31A0,
+    SoftReset = 0xABAC5A,
+    RNG = 0x7535C0,
+    Spawns = 0x2AE5D78,
+    Continue = 0x29FB580,
+    SaveSelect = 0x26174E0,
+    SveAddr = 0x9BA930,
+    LoadingIndicator = 0x8EC5B0,
+    CurrentOpenMenu = 0x7435D0,
+    WriteLogic = 0x7134A0,
+    -- TODO: Fill in values for these once they're found again
+    -- HBBGM = ?,
+    -- ARDEvent = ?,
+    GummiSkip = 0x9AD8A7,
+    ShowAllItemsInShopsFunction = _ShowAllItemsInShops,
+}
