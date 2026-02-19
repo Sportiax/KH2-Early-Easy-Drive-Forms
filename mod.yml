@@ -36,6 +36,10 @@ assets:
     method: copy
     source:
       - name: dll\EnsureFormWeapons.dll
+  - name: scripts/HDRAI.lua
+    method: copy
+    source:
+      - name: HDRAI.lua
   - name: scripts/Unlock Shops.lua
     method: copy
     source:
@@ -68,7 +72,3 @@ assets:
     method: copy
     source:
       - name: io_packages/kh2lib/SteamShared-1_0_0_10.lua
-  - name: scripts/F266B00B LuaLibrary.lua
-    method: copy
-    source:
-      - name: LuaLibrary.lua
